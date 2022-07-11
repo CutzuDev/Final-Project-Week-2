@@ -861,4 +861,41 @@ button {
   font-size: 18px;
   text-align: center;
   max-width: 576px;
+  margin-top: 16px;
 }
+
+.faq__questions {
+  display: flex;
+  flex-direction: column;
+  max-width: 896px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.faq__question {
+  display: flex;
+  padding: 16px 40px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #edf2f7;
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+.faq__question:hover {
+  background-color: #e2e8f0;
+}
+
+.faq__header {
+  margin-bottom: 16px;
+}
+
+.question__text {
+  color: #2D3748;
+  font-size: 20px;
+  font-weight: 500;
+}
+
