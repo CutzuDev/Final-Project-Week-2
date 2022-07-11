@@ -706,8 +706,6 @@ button {
   border-color: rgb(102, 126, 234);
 }
 
-
-
 /* TESTIMONIALS */
 
 .testimonials__img--container {
@@ -801,4 +799,54 @@ button {
 
 .rating__user--functions {
   text-align: left;
+}
+
+.rating__user--rated {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(237, 242, 247);
+  color: #6415ff;
+  padding: 16px;
+  margin: 0 12px;
+  border: 0px;
+}
+
+.arrow__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(237, 242, 247);
+  color: #6415ff;
+  padding: 16px;
+  margin: 0 12px;
+  border: 0px;
+}
+
+.arrow__left--img {
+  width: 16px;
+  height: 16px;
+  stroke-width: 3;
+}
+
+.arrow__right--img {
+  width: 16px;
+  height: 16px;
+  stroke-width: 3;
+}
+
+.rating__user--buttons {
+  display: flex;
+}
+
+.divider {
+  margin: 12px 0;
+  border-right: 1px#a0aec0 solid;
+  opacity: 0.25;
 }
