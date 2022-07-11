@@ -7,6 +7,14 @@
   font-family: "Inter", sans-serif;
 }
 
+.white__1 {
+  color: #f7fafc !important;
+}
+
+.white__2 {
+  color: #e2e8f0 !important;
+}
+
 .text--purple {
   color: #6415ff;
 }
@@ -645,9 +653,14 @@ button {
 }
 
 .feature__button {
-  padding: 16px 32px;
+  padding: 18px 32px;
   width: 100%;
-  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  border: none;
 }
 
 .pricing__panel--line-color {
@@ -661,10 +674,131 @@ button {
 }
 
 .color__blue {
-  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
 }
 
 .color__red {
-  background: linear-gradient(115deg,rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
+
+.panel__blue {
+  background-image: linear-gradient(
+    135deg,
+    rgb(76, 81, 191) 0%,
+    rgb(102, 126, 234) 100%
+  );
+}
+
+.button__special {
+  background: white;
+  color: #6415ff;
+}
+
+.features__special {
+  border-color: rgb(102, 126, 234);
+}
+
+
+
+/* TESTIMONIALS */
+
+.testimonials__img--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__left--column {
+  width: 50%;
+}
+
+.testimonials__right--column {
+  width: 50%;
+  padding-left: 64px;
+}
+
+.raiting__container {
+  display: flex;
+}
+
+.raiting__star {
+  fill: #f6ad55;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.raiting__star:not(:last-child) {
+  margin-right: 4px;
+}
+
+.review__title {
+  margin-top: 16px;
+  text-align: left;
+  font-size: 20px;
+  color: #243e63;
+}
+
+.review__description {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  text-align: left;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.user__review {
+  margin-top: 40px;
+}
+
+.testimonails__description {
+  text-align: left;
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.testimonials__title {
+  text-align: left;
+  margin-top: 16px;
+}
+
+.testimonials__header {
+  text-align: left;
+}
+
+.rating__user--img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.rating__user--text--container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  justify-content: center;
+}
+
+.rating__user--container {
+  display: flex;
+}
+
+.rating__user--name {
+  text-align: left;
+  font-size: 20px;
+  color: #243e63;
+}
+
+.rating__user--functions {
+  text-align: left;
 }
