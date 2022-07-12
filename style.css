@@ -925,7 +925,7 @@ button {
 }
 
 .ad__container {
-  display: flex;
+  display: flex !important;
   padding: 0 32px;
   margin: 0 128px;
   height: 75px;
