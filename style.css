@@ -924,7 +924,7 @@ button {
   padding: 96px 0;
 }
 
-.ad__container {
+.ad__container__mine {
   display: flex !important;
   padding: 0 32px;
   margin: 0 128px;
