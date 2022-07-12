@@ -899,3 +899,36 @@ button {
   font-weight: 500;
 }
 
+.ad__background {
+  background-color: #243e63;
+  border-radius: 8px;
+  padding: 96px 0;
+}
+
+.ad__container {
+  display: flex;
+  padding: 0 32px;
+  margin: 0 128px;
+
+}
+
+.ad__title {
+  width: 50%;
+  font-size: 30px;
+  color: #f7fafc;
+  text-align: left;
+}
+
+.button__container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ad__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  font-size: 16px;
+}
