@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
   </head>
   <body>
     <div id="root">
@@ -32,6 +33,49 @@
               </li>
               <li><a href="" class="nav__link nav__signup">Sign Up</a></li>
             </ul>
+            <button class="navbar__menu--button" onclick="openMenu()">
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="navbar__menu"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg> 
+            </button>
+            <div class="navbar__menu--backdrop">
+              <button class="navbar__menu--backdrop--button" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navbar__menu--cross"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </button>
+              <ul class="navbar__menu--backdrop--list">
+                <li class="navbar__menu--backdrop--item">
+                  <a href="#" class="nav__link link__hover-effect navbar__menu--item--text"">About</a>
+                </li>
+                <li class="navbar__menu--backdrop--item">
+                  <a href="#" class="nav__link link__hover-effect navbar__menu--item--text"">Blog</a>
+                </li>
+                <li class="navbar__menu--backdrop--item">
+                  <a href="#" class="nav__link link__hover-effect navbar__menu--item--text"">Pricing</a>
+                </li>
+                <li class="navbar__menu--backdrop--item">
+                  <a href="#" class="nav__link link__hover-effect navbar__menu--item--text"">Contact Us</a>
+                </li>
+                <li class="navbar__menu--backdrop--item">
+                  <a href="#" class="nav__link link__hover-effect navbar__menu--item--text"">Login</a>
+                </li>
+                <li class="navbar__menu--backdrop--item">
+                  <a href="#" class="nav__link link__hover-effect navbar__menu--item--text nav__signup">Sign Up</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -50,6 +94,9 @@
               <div class="about--us__email--input">
                 <input type="email" placeholder="Your E-mail Address" />
                 <button>Get Started</button>
+              </div>
+              <div class="about--us__email--button__container">
+                <button class="about--us__email--button">Get Started</button>
               </div>
               <div class="about--us__customers">
                 <p>OUR TRUSTED CUSTOMERS</p>
@@ -259,7 +306,7 @@
       </section>
       <section id="values">
         <div class="cotainer">
-          <div class="row two--column row__padding">
+          <div class="row column__reverse two--column row__padding">
             <div class="values__left--column">
               <h5 class="values__header header">
                 <span class="text--purple"> VALUES </span>
@@ -564,7 +611,8 @@
                 <h5 class="question__text">
                   Are all the templates easily customizable
                 </h5>
-                <svg
+                <div class="question__img--container">
+                  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -578,12 +626,14 @@
                 >
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
+                </div>
               </li>
               <li class="faq__question">
                 <h5 class="question__text">
                   How long do you usually support an standalone template for ?
                 </h5>
-                <svg
+                <div class="question__img--container">
+                  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -597,12 +647,15 @@
                 >
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
+                </div>
+              </li>
               </li>
               <li class="faq__question">
                 <h5 class="question__text">
                   What kind of payment methods do you accept ?
                 </h5>
-                <svg
+                <div class="question__img--container">
+                  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -616,12 +669,15 @@
                 >
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
+                </div>
+              </li>
               </li>
               <li class="faq__question">
                 <h5 class="question__text">
                   Is there a subscribption service to get the latest templates ?
                 </h5>
-                <svg
+                <div class="question__img--container">
+                  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -635,12 +691,15 @@
                 >
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
+                </div>
+              </li>
               </li>
               <li class="faq__question">
                 <h5 class="question__text">
                   Are the templates compatible with the React ?
                 </h5>
-                <svg
+                <div class="question__img--container">
+                  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -654,12 +713,15 @@
                 >
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
+                </div>
+              </li>
               </li>
               <li class="faq__question">
                 <h5 class="question__text">
                   Do you really support Internet Explorer 11 ?
                 </h5>
-                <svg
+                <div class="question__img--container">
+                  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -673,6 +735,8 @@
                 >
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
+                </div>
+              </li>
               </li>
             </ul>
           </div>
@@ -830,4 +894,3 @@
     </div>
   </body>
 </html>
-
